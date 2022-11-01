@@ -1,10 +1,16 @@
 package com.wildcodeschool.wildandwizard.entity;
 
-// TODO : update this entity
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
 
+@Entity
 public class School {
 
+    @Id
+    @GeneratedValue
     private Long id;
+
     private String name;
     private Long capacity;
     private String country;
